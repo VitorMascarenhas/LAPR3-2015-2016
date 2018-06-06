@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<vehicle_list>
+    <vehicle name="Dummy01" description= "Dummy teste vehicle">
+		<type>car</type>
+		<motorization>combustion</motorization>
+		<fuel>gasoline</fuel>
+		<mass>1400 Kg</mass>
+		<load>120 kg</load>
+    	<drag>0.35</drag>
+    	<frontal_area>1.8</frontal_area>
+    	<rrc>0.01</rrc>
+    	<wheel_size>0.5</wheel_size>
+    	<velocity_limit_list>
+    		<velocity_limit>
+    			<segment_type>Highway</segment_type>
+    			<limit>100</limit>
+    		</velocity_limit>
+    	</velocity_limit_list>
+   		<energy>  			
+    		<min_rpm>1000</min_rpm>
+    		<max_rpm>5500</max_rpm>
+    		<final_drive_ratio>2.6</final_drive_ratio>
+   			<gear_list>
+    			<gear id="01">
+    				<ratio>3.5</ratio>
+    			</gear>
+				<gear id="02">
+    				<ratio>2.5</ratio>
+    			</gear>
+    			<gear id="03">
+    				<ratio>1.25</ratio>
+    			</gear>
+    			<gear id="04">
+    				<ratio>0.9</ratio>
+    			</gear>
+    		</gear_list>
+    		<throttle_list>
+    			<throttle id="25">
+    				<regime>
+    					<torque>85</torque>
+    					<rpm_low>1000</rpm_low>
+    					<rpm_high>2499</rpm_high>
+    					<SFC>8.2</SFC>
+    				</regime>
+    				<regime>
+    					<torque>95</torque>
+    					<rpm_low>2500</rpm_low>
+    					<rpm_high>3999</rpm_high>
+    					<SFC>6.2</SFC>
+    				</regime>
+    				<regime>
+    					<torque>80</torque>
+    					<rpm_low>4000</rpm_low>
+    					<rpm_high>5500</rpm_high>
+    					<SFC>10.2</SFC>
+    				</regime>
+    			</throttle>
+    			<throttle id="50">
+    				<regime>
+    					<torque>135</torque>
+    					<rpm_low>1000</rpm_low>
+    					<rpm_high>2499</rpm_high>
+    					<SFC>5.2</SFC>
+    				</regime>
+    				<regime>
+    					<torque>150</torque>
+    					<rpm_low>2500</rpm_low>
+    					<rpm_high>3999</rpm_high>
+    					<SFC>3.2</SFC>
+    				</regime>
+    				<regime>
+    					<torque>140</torque>
+    					<rpm_low>4000</rpm_low>
+    					<rpm_high>5500</rpm_high>
+    					<SFC>8.2</SFC>
+    				</regime>
+    			</throttle>
+    			<throttle id="100">
+    				<regime>
+    					<torque>200</torque>
+    					<rpm_low>1000</rpm_low>
+    					<rpm_high>2499</rpm_high>
+    					<SFC>2.2</SFC>
+    				</regime>
+    				<regime>
+    					<torque>240</torque>
+    					<rpm_low>2500</rpm_low>
+    					<rpm_high>3999</rpm_high>
+    					<SFC>1.2</SFC>
+    				</regime>
+    				<regime>
+    					<torque>190</torque>
+    					<rpm_low>4000</rpm_low>
+    					<rpm_high>5500</rpm_high>
+    					<SFC>4.2</SFC>
+    				</regime>
+    			</throttle>
+    		</throttle_list>
+    	</energy>
+    </vehicle>
+</vehicle_list>
+

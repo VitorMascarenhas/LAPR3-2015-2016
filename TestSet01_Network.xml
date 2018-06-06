@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Network id="TestSet01" description="Simple test set to begin development">
+	<node_list>
+		<node id="n0"/>
+    	<node id="n1"/>
+    	<node id="n2"/>
+    </node_list>
+    <section_list>
+    	<road_section begin="n0" end="n1">
+    		<road>E01</road>
+    		<typology>regular road</typology>
+    		<direction>bidirectional</direction> 
+    		<toll>0</toll>
+    		<wind_direction>20</wind_direction>
+    		<wind_speed>3 m/s</wind_speed>
+    		<segment_list>
+    			<segment id="01">
+    				<height>100</height>
+    				<slope>1.5%</slope>
+    				<length>3.2 Km</length>
+    				<max_velocity>90 Km/h</max_velocity>
+    				<min_velocity>0 Km/h</min_velocity>
+    				<number_vehicles>20</number_vehicles>
+    			</segment>
+    			<segment id="02">
+    				<height>148</height>
+    				<slope>-1.5%</slope>
+    				<length>3.2 Km</length>
+    				<max_velocity>90 Km/h</max_velocity>
+    				<min_velocity>0 Km/h</min_velocity>
+    				<number_vehicles>20</number_vehicles>
+    			</segment>
+    		</segment_list>
+    	</road_section>
+    	<road_section begin="n1" end="n2">
+    		<road>E01</road>
+    		<typology>regular road</typology>
+    		<direction>bidirectional</direction> 
+    		<toll>0</toll>
+    		<wind_direction>-5</wind_direction>
+    		<wind_speed>3 m/s</wind_speed>
+    		<segment_list>
+    			<segment id="01">
+    				<height>100</height>
+    				<slope>0</slope>
+    				<length>10 Km</length>
+    				<max_velocity>90 Km/h</max_velocity>
+    				<min_velocity>0 Km/h</min_velocity>
+    				<number_vehicles>30</number_vehicles>
+    			</segment>
+    			<segment id="02">
+    				<height>100</height>
+    				<slope>0.5%</slope>
+    				<length>5 Km</length>
+    				<max_velocity>90 Km/h</max_velocity>
+    				<min_velocity>0 Km/h</min_velocity>
+    				<number_vehicles>20</number_vehicles>
+    			</segment>
+    		</segment_list>
+    	</road_section>
+    	<road_section begin="n0" end="n2">
+    		<road>"A01"</road>
+    		<typology>highway</typology>
+    		<direction>bidirectional</direction> 
+    		<toll>12</toll>
+    		<wind_direction>-5</wind_direction>
+    		<wind_speed>3 m/s</wind_speed>
+    		<segment_list>
+    			<segment id="01">
+    				<height>100</height>
+    				<slope>0%</slope>
+    				<length>20 Km</length>
+    				<max_velocity>120 Km/h</max_velocity>
+    				<min_velocity>50 Km/h</min_velocity>
+    				<number_vehicles>100</number_vehicles>
+    			</segment>
+    		</segment_list>
+    	</road_section>
+    	<road_section begin="n1" end="n2">
+    		<road>"A03"</road>
+    		<typology>highway</typology>
+    		<direction>bidirectional</direction> 
+    		<toll>4</toll>
+    		<wind_direction>-5</wind_direction>
+    		<wind_speed>3 m/s</wind_speed>
+    		<segment_list>
+    			<segment id="01">
+    				<height>100</height>
+    				<slope>0.125%</slope>
+    				<length>20 Km</length>
+    				<max_velocity>120 Km/h</max_velocity>
+    				<min_velocity>50 Km/h</min_velocity>
+    				<number_vehicles>100</number_vehicles>
+    			</segment>
+    		</segment_list>
+    	</road_section>
+    </section_list>
+</Network>
+
